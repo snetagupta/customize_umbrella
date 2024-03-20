@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Custom Umbrella</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <section class="left-container">
+          <img
+            class="umbrella"
+            src="./images/Blue umbrella.png"
+            alt="Umbrella"
+          />
+
+          <div class="logo-container"></div>
+        </section>
+
+        <section class="right-container">
+          <h2>Custom Umbrella</h2>
+
+          <div class="theme-buttons">
+            <button
+              id="theme-1"
+              data-theme="#14BDEB"
+              aria-label="Select blue theme"
+            ></button>
+            <button
+              id="theme-2"
+              data-theme="#E899DC"
+              aria-label="Select pink theme"
+            ></button>
+            <button
+              id="theme-3"
+              data-theme="#FDE74C"
+              aria-label="Select yellow theme"
+            ></button>
+          </div>
+
+          <h3>Custmize your umbrella</h3>
+          <div>
+            <p>Upload a logo for an instant preview.</p>
+            <p class="upload-guide">
+              .png and .jpg files only. Max file size is 5MB.
+            </p>
+          </div>
+
+          <label class="btn upload_btn" for="upload">
+            <input
+              type="file"
+              name="upload"
+              id="upload"
+              class="btn"
+              accept="image/png, image/jpeg"
+              aria-label="Upload logo"
+            />
+
+            <div>
+              <img src="./images/upload_icon.svg" alt="Upload logo" id="icon" />
+            </div>
+
+            <span class="upload-text">UPLOAD LOGO</span>
+          </label>
+        </section>
+      </section>
+    </main>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>
